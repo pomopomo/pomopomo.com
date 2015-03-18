@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/forever -m 5 server.js --production
+web: ./node_modules/.bin/forever --minUptime 500 --spinSleepTime 500 -m 5 server.js --production
