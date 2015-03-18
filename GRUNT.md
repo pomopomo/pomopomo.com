@@ -3,20 +3,34 @@ If tasks is starting with `[A]` that means given task is alias task of another
 
 Heroku tasks have a sign like `[H]` so you need some permission to use this task
 
-# grunt
+```js
+ grunt
+```
 It will run `default` task
 
-# grunt default
+```js
+ grunt default
+```
 Just running `jshint` task. This task can be updated later.
 
-# grunt jshint
+```js
+ grunt jshint
+```
 Every project has to obey lint rules and this task is a lint checker for whole js/json files
 
-# [H][A]grunt deploy
+```js
+ grunt deploy
+```
+[H][A]
 Alias of `shell:deploy`
 
-# [H]grunt shell:deploy
+```js
+ grunt shell:deploy
+```
+[H]
 This task will deploy master branch to heroku
 
-# [H]grunt shell:log
-Showing realtime heroku logs
+```js
+ grunt shell:log
+```
+[H] Showing realtime heroku logs
