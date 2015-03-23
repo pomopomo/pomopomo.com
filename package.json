@@ -1,7 +1,8 @@
 {
   "name": "pomopomo.com",
-  "description": "web backend for pomopomo apps and also another pomodoro tool",
   "version": "1.0.0",
+  "homepage": "https://pomopomo.com",
+  "description": "web backend for pomopomo apps and also another pomodoro tool",
   "scripts": {
     "main": "./node_modules/.bin/forever -m 5 server.js",
     "test": "mocha --require=env-test --recursive test --reporter tap --timeout 50000ms"
@@ -14,24 +15,35 @@
     "node": "0.12.x",
     "npm": "2.5.x"
   },
-  "devDependencies": {
-    "env-test": "^1.0.0",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-shell": "^1.1.2",
-    "jshint": "^2.6.3",
-    "jshint-stylish": "^1.0.1",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.1.0"
-  },
   "dependencies": {
     "body-parser": "^1.12.2",
     "compression": "^1.4.3",
     "config": "^1.12.0",
     "express": "^4.12.2",
     "forever": "^0.14.1",
+    "jade": "^1.9.2",
     "morgan": "^1.5.2",
     "response-time": "^2.3.0",
     "winston": "^0.9.0"
+  },
+  "devDependencies": {
+    "env-test": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-bower-installer": "^0.3.6",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html2js": "^0.3.0",
+    "grunt-ng-annotate": "^0.10.0",
+    "grunt-open": "^0.2.3",
+    "grunt-shell": "^1.1.2",
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
   }
 }
