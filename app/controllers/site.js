@@ -1,5 +1,5 @@
 exports.index = function (req, res) {
-  res.json(true);
+  res.json('index');
 };
 
 exports.redirect = function (req, res) {
