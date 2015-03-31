@@ -1,3 +1,6 @@
 module.exports = {
-  status: 'prod'
+  status: 'prod',
+  google: {
+    callbackURL: 'http://pomopomo.com/auth/google/callback'
+  }
 };

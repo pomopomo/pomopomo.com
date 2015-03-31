@@ -1,3 +1,7 @@
 exports.index = function (req, res) {
-  res.render('index');
+  res.json('index');
+};
+
+exports.redirect = function (req, res) {
+  res.redirect('/');
 };
